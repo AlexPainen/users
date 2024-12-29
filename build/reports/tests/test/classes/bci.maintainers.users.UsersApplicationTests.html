@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.605s</div>
+<div class="counter">0.533s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.605s</td>
+<td class="success">0.533s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>21:52:34.248 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [bci.maintainers.users.UsersApplicationTests]: UsersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:52:34.337 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration bci.maintainers.users.UsersApplication for test class bci.maintainers.users.UsersApplicationTests
+<pre>19:10:59.005 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [bci.maintainers.users.UsersApplicationTests]: UsersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:10:59.148 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration bci.maintainers.users.UsersApplication for test class bci.maintainers.users.UsersApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -99,19 +99,19 @@
 
  :: Spring Boot ::                (v3.4.1)
 
-2024-12-28T21:52:34.786-03:00  INFO 8927 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : Starting UsersApplicationTests using Java 17.0.13 with PID 8927 (started by apainen in /home/apainen/IdeaProjects/users)
-2024-12-28T21:52:34.787-03:00  INFO 8927 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-12-28T21:52:35.423-03:00  INFO 8927 --- [users] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-28T21:52:35.448-03:00  INFO 8927 --- [users] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
-2024-12-28T21:52:35.962-03:00  INFO 8927 --- [users] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-28T21:52:36.028-03:00  INFO 8927 --- [users] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2024-12-28T21:52:36.059-03:00  INFO 8927 --- [users] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-28T21:52:36.318-03:00  INFO 8927 --- [users] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-28T21:52:36.343-03:00  INFO 8927 --- [users] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-28T21:52:36.502-03:00  INFO 8927 --- [users] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-12-28T21:52:36.505-03:00  INFO 8927 --- [users] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-28T21:52:36.530-03:00  WARN 8927 --- [users] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-12-28T21:52:36.556-03:00  INFO 8927 --- [users] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-12-29T19:10:59.718-03:00  INFO 87848 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : Starting UsersApplicationTests using Java 17.0.13 with PID 87848 (started by apainen in /home/apainen/IdeaProjects/users)
+2024-12-29T19:10:59.720-03:00  INFO 87848 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-29T19:11:00.502-03:00  INFO 87848 --- [users] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T19:11:00.567-03:00  INFO 87848 --- [users] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2024-12-29T19:11:01.171-03:00  INFO 87848 --- [users] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T19:11:01.221-03:00  INFO 87848 --- [users] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-29T19:11:01.258-03:00  INFO 87848 --- [users] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-29T19:11:01.630-03:00  INFO 87848 --- [users] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T19:11:01.678-03:00  INFO 87848 --- [users] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-29T19:11:01.867-03:00  INFO 87848 --- [users] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-29T19:11:01.869-03:00  INFO 87848 --- [users] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-29T19:11:01.891-03:00  WARN 87848 --- [users] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T19:11:01.910-03:00  INFO 87848 --- [users] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -119,18 +119,51 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-28T21:52:36.856-03:00  INFO 8927 --- [users] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-28T21:52:36.861-03:00  INFO 8927 --- [users] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-28T21:52:37.015-03:00  WARN 8927 --- [users] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-28T21:52:37.386-03:00  INFO 8927 --- [users] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-12-28T21:52:37.452-03:00  WARN 8927 --- [users] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-12-29T19:11:02.517-03:00  INFO 87848 --- [users] [    Test worker] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: bci.maintainers.users.model.entity.User (class must be instantiated by Interceptor)
+2024-12-29T19:11:02.687-03:00  INFO 87848 --- [users] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T19:11:02.726-03:00 DEBUG 87848 --- [users] [    Test worker] org.hibernate.SQL                        : 
+    create table phones (
+        number varchar(255) not null,
+        city_code varchar(255),
+        country_code varchar(255),
+        user_id uuid,
+        primary key (number)
+    )
+2024-12-29T19:11:02.732-03:00 DEBUG 87848 --- [users] [    Test worker] org.hibernate.SQL                        : 
+    create table users (
+        id uuid not null,
+        created timestamp(6),
+        email varchar(255),
+        is_active boolean not null,
+        las_login timestamp(6),
+        modified timestamp(6),
+        name varchar(255),
+        password varchar(255),
+        token varchar(255),
+        primary key (id)
+    )
+2024-12-29T19:11:02.735-03:00 DEBUG 87848 --- [users] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists users 
+       drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+2024-12-29T19:11:02.735-03:00 DEBUG 87848 --- [users] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists users 
+       add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2024-12-29T19:11:02.737-03:00 DEBUG 87848 --- [users] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists phones 
+       add constraint FKmg6d77tgqfen7n1g763nvsqe3 
+       foreign key (user_id) 
+       references users
+2024-12-29T19:11:02.743-03:00  INFO 87848 --- [users] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T19:11:03.232-03:00  WARN 87848 --- [users] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T19:11:03.530-03:00  INFO 87848 --- [users] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-29T19:11:03.594-03:00  WARN 87848 --- [users] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: bf9373dc-145a-4fa4-93fe-487fd4c26abe
+Using generated security password: 61524dab-782d-471c-8973-d4cffbe9fe2d
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-12-28T21:52:37.475-03:00  INFO 8927 --- [users] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-12-28T21:52:37.704-03:00  INFO 8927 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : Started UsersApplicationTests in 3.219 seconds (process running for 4.258)
+2024-12-29T19:11:03.614-03:00  INFO 87848 --- [users] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-29T19:11:03.805-03:00  INFO 87848 --- [users] [    Test worker] b.m.users.UsersApplicationTests          : Started UsersApplicationTests in 4.442 seconds (process running for 5.699)
 </pre>
 </span>
 </div>
@@ -142,7 +175,7 @@ This generated password is for development use only. Your security configuration
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.11.1</a> at Dec 28, 2024, 9:52:38 PM</p>
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at Dec 29, 2024, 7:11:04 PM</p>
 </div>
 </div>
 </body>
