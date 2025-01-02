@@ -6,32 +6,50 @@ spring:
     driverClassName: 'org.h2.Driver'
     username: sa
     password: ''
+    jpa:
+      database-platform: 'org.hibernate.dialect.H2Dialect'
+      defer-datasource-initialization: true
   h2:
     console:
       enabled: 'true'
   jpa:
-    #    show-sql: 'true'
+    show-sql: 'true'
     properties:
       hibernate:
-        dialect: 'org.hibernate.dialect.H2Dialect'
         format_sql: 'true'
     hibernate:
-      ddl-auto: 'update'
+      ddl-auto: update
 
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: 'DEBUG'
-        type:
-          descriptor:
-            sql:
-              BasicBinder: 'TRACE'
+#application:
+#  security:
+#    jwt:
+#      secret-key: McvbIKwPaVjhmKBwFUdHDXzvfWeAZgaJ8XJr6cBsvNkPI9VUvAWw7GzFMV6ZhHsI
+#      expiration: 86400000 # 1 day
+#      refresh-token:
+#        expiration: 604800000 # 7 days
 
-evaluation:
-  passwordExpression: '^[0-9,$]*$'
+#  security:
+#    user:
+#      name: root
+#      password: root
 
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: 'DEBUG'
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: 'TRACE'
+
+user:
+  password_regex: '^[A-Za-z0-9]{6,18}$'
+  email_regex: '^[a-zA-Z0-9_+&*-]+(?:\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$'
+
+server:
+  port: 8081
 # Config OpenAPI swagger
-springdoc:
-  swagger-ui:
-    path: '/swagger-ui-custom.html'
+#springdoc:
+#  swagger-ui:
+#    path: '/swagger-ui-custom.html'
